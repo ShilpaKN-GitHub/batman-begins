@@ -4,7 +4,8 @@ class Umbrella
   {
     var options =
     {
-      isStatic : true
+      isStatic : true,
+      friction: 0
     }
     this.body = Matter.Bodies.circle(x, y, 120, options);
     World.add(world, this.body);
@@ -12,7 +13,7 @@ class Umbrella
     var boy = createSprite(x, y, 20, 20);
     boy.addAnimation("walking", boyImg);
     boy.scale = 0.40;
-    boy.setCollider("rectangle", 0, 0, boy.width, boy.height);
+    boy.setCollider("rectangle", 0, 0, boy.width - 450, boy.height - 170);
   }
 
   display()

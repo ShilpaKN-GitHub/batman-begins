@@ -28,7 +28,7 @@ class Drop
     push();
     fill("lightblue");
     ellipseMode(CENTER);
-    ellipse(pos.x, pos.y, this.radius, this.radius + 10);
+    ellipse(pos.x, pos.y, this.radius, this.radius + 8);
     pop();
   }
 }
